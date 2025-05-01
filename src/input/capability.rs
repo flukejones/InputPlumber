@@ -438,6 +438,10 @@ pub enum GamepadButton {
     QuickAccess,
     /// Base button, usually on the bottom of the device
     QuickAccess2,
+    /// Screenface button, custom output for external apps
+    QuickCustom1,
+    /// Screenface button, custom output for external apps
+    QuickCustom2,
     /// Dedicated button for opening an on-screen keyboard
     Keyboard,
     /// Dedicated screenshot button
@@ -508,6 +512,8 @@ impl fmt::Display for GamepadButton {
             GamepadButton::North => write!(f, "North"),
             GamepadButton::QuickAccess => write!(f, "QuickAccess"),
             GamepadButton::QuickAccess2 => write!(f, "QuickAccess2"),
+            GamepadButton::QuickCustom1 => write!(f, "QuickCustom1"),
+            GamepadButton::QuickCustom2 => write!(f, "QuickCustom2"),
             GamepadButton::RightBumper => write!(f, "RightBumper"),
             GamepadButton::RightPaddle1 => write!(f, "RightPaddle1"),
             GamepadButton::RightPaddle2 => write!(f, "RightPaddle2"),
@@ -549,6 +555,8 @@ impl FromStr for GamepadButton {
             "North" => Ok(GamepadButton::North),
             "QuickAccess" => Ok(GamepadButton::QuickAccess),
             "QuickAccess2" => Ok(GamepadButton::QuickAccess2),
+            "QuickCustom1" => Ok(GamepadButton::QuickCustom1),
+            "QuickCustom2" => Ok(GamepadButton::QuickCustom2),
             "RightBumper" => Ok(GamepadButton::RightBumper),
             "RightPaddle1" => Ok(GamepadButton::RightPaddle1),
             "RightPaddle2" => Ok(GamepadButton::RightPaddle2),

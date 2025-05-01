@@ -736,6 +736,8 @@ impl From<Capability> for InputCapability {
                     GamepadButton::Guide => Self::GamepadButtonGuide,
                     GamepadButton::QuickAccess => Self::GamepadButtonQuick,
                     GamepadButton::QuickAccess2 => Self::GamepadButtonQuick2,
+                    GamepadButton::QuickCustom1 => Self::GamepadButtonQuickCustom1,
+                    GamepadButton::QuickCustom2 => Self::GamepadButtonQuickCustom2,
                     GamepadButton::Keyboard => Self::GamepadButtonKeyboard,
                     GamepadButton::Screenshot => Self::GamepadButtonScreenshot,
                     GamepadButton::Mute => Self::GamepadButtonMute,

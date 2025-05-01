@@ -603,6 +603,8 @@ pub enum InputCapability {
     /// Base button, usually on the bottom right, Steam Quick Access Button (...)
     GamepadButtonQuick = 0x126,
     GamepadButtonQuick2 = 0x127,
+    GamepadButtonQuickCustom1 = 0x128,
+    GamepadButtonQuickCustom2 = 0x129,
 
     /// South action, Sony Cross x, Xbox A, Nintendo B
     GamepadButtonSouth = 0x130,

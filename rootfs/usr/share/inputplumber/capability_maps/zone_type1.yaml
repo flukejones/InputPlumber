@@ -49,6 +49,24 @@ mapping:
       target_event:
           gamepad:
               button: Keyboard
+    - name: (ALT)HOME (shortpress)
+      source_events:
+          - evdev:
+                event_type: KEY
+                event_code: KEY_F20
+                value_type: button
+      target_event:
+          gamepad:
+              button: QuickCustom1
+    - name: (ALT)HOME (longpress)
+      source_events:
+          - evdev:
+                event_type: KEY
+                event_code: KEY_F21
+                value_type: button
+      target_event:
+          gamepad:
+              button: QuickCustom2
     - name: Left Paddle
       source_events:
           - evdev:

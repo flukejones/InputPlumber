@@ -629,6 +629,8 @@ fn event_codes_from_capability(capability: Capability) -> Vec<u16> {
                 GamepadButton::North => vec![KeyCode::BTN_NORTH.0],
                 GamepadButton::QuickAccess => vec![],
                 GamepadButton::QuickAccess2 => vec![],
+                GamepadButton::QuickCustom1 => vec![],
+                GamepadButton::QuickCustom2 => vec![],
                 GamepadButton::RightBumper => vec![KeyCode::BTN_TR.0],
                 GamepadButton::RightPaddle1 => vec![KeyCode::BTN_TRIGGER_HAPPY5.0],
                 GamepadButton::RightPaddle2 => vec![KeyCode::BTN_TRIGGER_HAPPY6.0],
